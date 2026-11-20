@@ -1,2 +1,198 @@
 # Arena-Menezes
 Site oficial da Arena-Menezes
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arena Menezes | Futvôlei, Vôlei e Funcional</title>
+<meta name="description" content="Arena Menezes: 2 quadras e um ótimo espaço para futvôlei, vôlei e funcional. Matricule-se ou marque sua aula.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#000;--fg:#fff;--mut:#9aa7bf;--blue:#1a5cff;--lbg:#fff;--lfg:#05070d;--lmut:#4b5870;--card:#f1f5ff;--line:#cfdcff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--lbg:#09101f;--lfg:#f3f6ff;--lmut:#9aa7bf;--card:#111a30;--line:#24335a;color-scheme:dark}}
+:root[data-theme="dark"]{--lbg:#09101f;--lfg:#f3f6ff;--lmut:#9aa7bf;--card:#111a30;--line:#24335a;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:400 1.0625rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#000;z-index:10}
+h1,h2,h3,.d{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-weight:800;text-transform:uppercase;line-height:.92}
+h2{font-size:clamp(2.8rem,9vw,6rem)}
+a{color:inherit}
+.w{max-width:1180px;margin:auto;padding:0 20px}
+section{padding:clamp(72px,12vw,150px) 0}
+.light{background:var(--lbg);color:var(--lfg)}
+.blue{background:var(--blue);color:#fff}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;background:var(--blue);color:#fff;font:700 1rem "DM Sans",sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.g{background:transparent;border:1.5px solid #fff}
+:focus-visible{outline:3px solid #6fa0ff;outline-offset:3px}
+header{position:fixed;inset:0 0 auto;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(0,0,0,.75);backdrop-filter:blur(12px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:1.5rem;color:#fff}
+.brand img{width:42px;height:42px;display:block}
+nav{display:flex;align-items:center;gap:26px}
+nav .lk{color:#cfd8ea;text-decoration:none;font-size:.95rem}
+nav .btn{padding:10px 20px}
+@media(max-width:820px){nav .lk{display:none}}
+.hero{min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 64px;position:relative;overflow:hidden;background:radial-gradient(60% 55% at 82% 18%,rgba(26,92,255,.6),transparent 70%),repeating-linear-gradient(90deg,transparent 0 119px,rgba(255,255,255,.06) 119px 120px),#000}
+.hero h1{font-size:clamp(3.8rem,15vw,11rem)}
+.hero h1 span{display:block;animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span:nth-child(2){animation-delay:.12s}.hero h1 span:nth-child(3){animation-delay:.24s}
+.hero p{max-width:34ch;font-size:1.25rem;color:#cfd8ea;margin:26px 0 30px;animation:up .9s .4s both}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;animation:up .9s .55s both}
+@keyframes up{from{opacity:0;transform:translateY(44px)}}
+.mq{background:var(--blue);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0}
+.mq div{display:inline-block;font-size:clamp(1.8rem,5vw,3rem);animation:mq 24s linear infinite}
+.mq i{display:inline-block;width:.45em;height:.45em;border-radius:50%;background:#fff;margin:0 .7em}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mf p{font:800 clamp(2.2rem,7.2vw,5.4rem)/1 "Barlow Condensed","Arial Narrow",Impact,sans-serif;text-transform:uppercase;max-width:1000px}
+.mf .t{color:#243252;transition:color .3s}.mf .t.on{color:#fff}
+.row{display:grid;gap:12px;padding:32px 0;border-top:2px solid var(--lfg)}
+.row:last-child{border-bottom:2px solid var(--lfg)}
+.row h3{font-size:clamp(2.8rem,9vw,6rem)}
+.row p{color:var(--lmut);max-width:44ch}
+@media(min-width:820px){.row{grid-template-columns:1fr 1fr;align-items:end}}
+.lst{list-style:none;padding:0;margin:40px 0 56px}
+.lst li{font-size:clamp(2.2rem,7vw,4.6rem);padding:.12em 0;border-bottom:1.5px solid rgba(255,255,255,.4)}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px}
+.st b{display:block;font:800 clamp(3.4rem,9vw,5.5rem)/1 "Barlow Condensed","Arial Narrow",sans-serif}
+.steps{display:grid;gap:40px;margin-top:56px}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr);gap:48px}}
+.steps .n{font-size:5.5rem;color:var(--blue)}
+.steps h3{font-size:2rem;margin:6px 0 10px}
+.steps p{color:var(--mut)}
+.fm{display:grid;gap:48px}
+@media(min-width:900px){.fm{grid-template-columns:1fr 1fr;gap:80px}}
+.fm .tel{display:inline-block;margin-top:24px;font-size:2.2rem}
+.f{display:grid;gap:16px}
+.f label{display:grid;gap:6px;font-weight:500;font-size:.95rem}
+.f input,.f select{width:100%;padding:14px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:inherit;font:inherit}
+.f small{color:var(--blue);min-height:1.2em}
+footer{padding:48px 0;color:var(--mut)}
+footer .w{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
+footer a{color:#fff}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 8px 28px rgba(26,92,255,.5)}
+.js .r{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;transition-delay:var(--d,0s)}
+.js .r.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .r{opacity:1;transform:none;transition:none}.hero h1 span,.hero p,.hero .cta,.mq div{animation:none}html{scroll-behavior:auto}}
+.rv{display:grid;gap:56px;margin-top:48px}
+@media(min-width:900px){.rv{grid-template-columns:1fr 1fr;gap:72px}}
+.rv .bx{border-top:2px solid var(--lfg);padding-top:28px}
+.rv h3{font-size:clamp(2.2rem,6vw,3.6rem)}
+.rv p{color:var(--lmut);margin:14px 0 24px;max-width:42ch}
+.btn.o{background:transparent;border:1.5px solid currentColor;color:inherit}
+.yt{position:relative;aspect-ratio:16/9;background:#000;border-radius:16px;overflow:hidden;display:grid;place-items:center;text-align:center;padding:20px;color:#fff;margin-bottom:20px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt p{color:#cfd8ea;margin:0 0 18px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-weight:700;padding:6px 16px;border-radius:999px;background:var(--blue);color:#fff}
+.tag::before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;animation:pl 1.2s infinite}
+@keyframes pl{50%{opacity:.25}}
+</style>
+</head>
+<body>
+<header><div class="w bar">
+<a class="brand d" href="#topo"><img src="logo.png" alt="Logo Arena Menezes">Arena Menezes</a>
+<nav><a class="lk" href="#modalidades">Modalidades</a><a class="lk" href="#turmas">Turmas</a><a class="lk" href="#replays">Replays</a><a class="lk" href="#como">Como começar</a><a class="btn" data-wa="Olá! Vim pelo site da Arena Menezes e quero fazer minha matrícula." href="https://wa.me/5521993920970">Matricule-se</a></nav>
+</div></header>
+
+<main id="topo">
+<section class="hero"><div class="w">
+<h1><span>Seu jogo</span><span>começa na</span><span>Arena.</span></h1>
+<p>Duas quadras e um ótimo espaço para jogar futvôlei, vôlei e treinar no funcional.</p>
+<div class="cta"><a class="btn" data-wa="Olá! Vim pelo site da Arena Menezes e quero fazer minha matrícula." href="https://wa.me/5521993920970">Matricule-se</a><a class="btn g" href="#matricula">Marcar aula</a></div>
+</div></section>
+
+<div class="mq d" id="mq" aria-hidden="true"></div>
+
+<section class="mf"><div class="w"><p>Aqui o esporte cabe em qualquer rotina. Do vôlei kids ao adulto, do iniciante ao intermediário, tem turma esperando por você. Duas quadras, um ótimo espaço e gente que joga junto.</p></div></section>
+
+<section class="light" id="modalidades"><div class="w">
+<h2 class="r" style="margin-bottom:48px">Escolha seu jogo.</h2>
+<div class="row r"><h3>Futvôlei</h3><p>Bola no pé, rede no meio e muita resenha. Um jogo rápido e divertido, perfeito para fazer amizades na areia.</p></div>
+<div class="row r"><h3>Vôlei</h3><p>Turmas kids e adulto, do iniciante ao intermediário. Fundamentos, jogo e evolução no seu ritmo.</p></div>
+<div class="row r"><h3>Funcional</h3><p>Treino que une força, resistência e mobilidade para você ganhar condicionamento dentro e fora da quadra.</p></div>
+</div></section>
+
+<section class="blue" id="turmas"><div class="w">
+<h2 class="r">Uma turma para cada fase.</h2>
+<ul class="lst d"><li class="r">Vôlei kids</li><li class="r">Vôlei adulto</li><li class="r">Iniciante</li><li class="r">Intermediário</li></ul>
+<div class="st">
+<div class="r"><b>2</b>quadras para jogar e treinar</div>
+<div class="r" style="--d:.1s"><b>3</b>modalidades no mesmo espaço</div>
+<div class="r" style="--d:.2s"><b>+2 mil</b>pessoas seguem a Arena no Instagram</div>
+</div></div></section>
+
+<section class="light" id="replays"><div class="w">
+<h2 class="r">Replays e jogos ao vivo.</h2>
+<div class="rv">
+<div class="bx r"><h3 class="d">Replays no Smash Live</h3><p>Jogou na Arena Menezes? Baixe o app Smash Live, procure a Arena, escolha o dia e o horário e reveja, baixe e compartilhe suas jogadas.</p><a class="btn" href="https://play.google.com/store/apps/details?id=app.smashlive.io" target="_blank" rel="noopener">Baixar na Play Store</a></div>
+<div class="bx r" style="--d:.12s"><h3 class="d">Ao vivo no YouTube</h3><p id="ytp">Acompanhe os jogos da Arena em tempo real no canal @ArenaMenezes.</p><div class="yt" id="yt"></div><a class="btn o" href="https://www.youtube.com/@ArenaMenezes" target="_blank" rel="noopener">Ver canal no YouTube</a></div>
+</div></div></section>
+
+<section id="como"><div class="w">
+<h2 class="r">Comece em três passos.</h2>
+<div class="steps">
+<div class="r"><div class="n d">1</div><h3>Chame no WhatsApp</h3><p>Conte qual modalidade você quer e qual é o seu nível.</p></div>
+<div class="r" style="--d:.12s"><div class="n d">2</div><h3>Marque sua aula</h3><p>Escolha com a gente o dia e o horário que cabem na sua semana.</p></div>
+<div class="r" style="--d:.24s"><div class="n d">3</div><h3>Faça a matrícula</h3><p>Garanta sua vaga na turma e venha jogar.</p></div>
+</div></div></section>
+
+<section class="light" id="matricula"><div class="w fm">
+<div class="r"><h2>Marque sua aula ou faça sua matrícula.</h2><p style="margin-top:20px;color:var(--lmut)">Preencha ao lado e a conversa continua no WhatsApp.</p><a class="tel d" href="tel:+5521993920970">+55 21 99392-0970</a></div>
+<div class="f r">
+<label>Seu nome<input id="n" autocomplete="name" placeholder="Como podemos te chamar?"></label>
+<label>Quero<select id="a"><option>marcar uma aula</option><option>fazer minha matrícula</option><option>tirar dúvidas</option></select></label>
+<label>Modalidade<select id="m"><option>Futvôlei</option><option>Vôlei kids</option><option>Vôlei adulto</option><option>Funcional</option></select></label>
+<label>Seu nível<select id="l"><option>Nunca joguei</option><option>Iniciante</option><option>Intermediário</option></select></label>
+<small id="e" role="alert"></small>
+<a class="btn" id="go" target="_blank" rel="noopener" href="https://wa.me/5521993920970" style="text-align:center">Enviar pelo WhatsApp</a>
+</div>
+</div></section>
+</main>
+
+<footer><div class="w">
+<span class="d" style="font-size:1.6rem;color:#fff">Arena Menezes</span>
+<span>2 quadras e um ótimo espaço. Futvôlei, vôlei e funcional.</span>
+<span><a href="https://instagram.com/arenamenezes_" target="_blank" rel="noopener">@arenamenezes_</a> · <a href="tel:+5521993920970">+55 21 99392-0970</a></span>
+</div></footer>
+<a class="btn fab" data-wa="Olá! Vim pelo site da Arena Menezes e quero mais informações." href="https://wa.me/5521993920970" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+var wa=function(t){return'https://wa.me/5521993920970?text='+encodeURIComponent(t)};
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href=wa(a.dataset.wa);a.target='_blank';a.rel='noopener'});
+var t='Futvôlei<i></i>Vôlei<i></i>Funcional<i></i>'.repeat(4);
+document.getElementById('mq').innerHTML='<div>'+t+t+'</div>';
+var p=document.querySelector('.mf p');
+p.innerHTML=p.textContent.trim().split(/\s+/).map(function(w){return'<span class="t">'+w+'</span>'}).join(' ');
+var ws=p.querySelectorAll('.t');
+function mf(){var r=p.getBoundingClientRect(),h=innerHeight,k=Math.min(1,Math.max(0,(h*.8-r.top)/(r.height+h*.3))),n=Math.round(k*ws.length);ws.forEach(function(w,i){w.classList.toggle('on',i<n)})}
+addEventListener('scroll',mf,{passive:true});addEventListener('resize',mf);mf();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.r').forEach(function(e){io.observe(e)});
+var go=document.getElementById('go');
+go.addEventListener('click',function(ev){
+var v=function(i){return document.getElementById(i).value.trim()},n=v('n'),e=document.getElementById('e');
+if(!n){ev.preventDefault();e.textContent='Digite seu nome para continuar.';document.getElementById('n').focus();return}
+e.textContent='';
+go.href=wa('Olá! Meu nome é '+n+'. Quero '+v('a')+' de '+v('m')+' (nível: '+v('l')+'). Vim pelo site da Arena Menezes.');
+});
+var YT={handle:'ArenaMenezes',id:'UCgBUaY40nVhrrTZwZit4WtA',key:''};
+(function(){
+var box=document.getElementById('yt'),tx=document.getElementById('ytp'),ch='https://www.youtube.com/@'+YT.handle;
+function frame(src,live){box.innerHTML='<iframe src="'+src+'" title="Transmissão ao vivo da Arena Menezes" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>';if(live)tx.innerHTML='<span class="tag">Ao vivo agora</span>'}
+function off(){box.innerHTML='<div><p>Nenhuma live no momento.</p><a class="btn" href="'+ch+'/live" target="_blank" rel="noopener">Assistir ao vivo no YouTube</a></div>'}
+if(!YT.key){YT.id?frame('https://www.youtube.com/embed/live_stream?channel='+YT.id):off();return}
+var get=function(u){return fetch('https://www.googleapis.com/youtube/v3/'+u+'&key='+YT.key).then(function(r){return r.json()})};
+(YT.id?Promise.resolve(YT.id):get('channels?part=id&forHandle=@'+YT.handle).then(function(d){return d.items[0].id}))
+.then(function(id){return get('playlistItems?part=contentDetails&maxResults=5&playlistId=UU'+id.slice(2))})
+.then(function(d){return get('videos?part=snippet&id='+d.items.map(function(i){return i.contentDetails.videoId}).join(','))})
+.then(function(d){var v=d.items.filter(function(i){return i.snippet.liveBroadcastContent==='live'})[0];v?frame('https://www.youtube.com/embed/'+v.id+'?autoplay=1&mute=1',1):off()})
+.catch(off)
+})();
+</script>
+</body>
+</html>
